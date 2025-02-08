@@ -1,11 +1,15 @@
-if (place_meeting(x,y,DragSquare) && DragSquare.dragged == false){
-	global.lock = true;
+
+inst = instance_place(x,y,DragSquare);
+
+if (inst != noone && inst.dragged == false){
+
+	lock = true;
 }
 else{
-	global.lock = false;
+	lock = false;
 }
 
-if (global.lock == true){
-	DragSquare.x = x + (sprite_width/4);
-	DragSquare.y = y + (sprite_height/4);
+if (lock == true){
+	inst.x = x + (sprite_width/4);
+	inst.y = y + (sprite_height/4);
 }

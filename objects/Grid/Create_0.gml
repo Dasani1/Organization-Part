@@ -1,1 +1,4 @@
-global.lock = false;
+lock = false;
+inst = id;
+
+other_iden = 0;

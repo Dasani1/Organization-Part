@@ -1,3 +1,7 @@
+var inst = instance_place(x,y,DragSquare);
+
+
+
 if(dragged == false){
 	exit;
 }
