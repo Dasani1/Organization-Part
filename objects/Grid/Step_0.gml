@@ -10,6 +10,6 @@ else{
 }
 
 if (lock == true){
-	inst.x = x + (sprite_width/4);
-	inst.y = y + (sprite_height/4);
+	inst.x = x + (sprite_width/4)+7;
+	inst.y = y +(sprite_width/4) + 7;
 }
